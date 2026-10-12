@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Neighborly helps people find nearby neighbors to feed pets, water plants, and check homes while they are away."
+    />
+    <title>Neighborly — Pet & Plant Sitting</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="#top" class="brand" aria-label="Neighborly home">
+          <span class="brand-mark" aria-hidden="true">N</span>
+          <span class="brand-text">Neighborly</span>
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#board">Find a Neighbor</a>
+          <a href="#how-it-works">How It Works</a>
+        </nav>
+
+        <button class="button button-primary nav-cta" type="button" data-open-modal>
+          POST A REQUEST
+        </button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Neighbor help, from nearby</p>
+            <h1>Going away? Leave the care to your people.</h1>
+            <p class="hero-text">
+              Connect with nearby pet sitters, plant waterers, and gentle home check-ins so you can travel lighter and come back to a well-loved place.
+            </p>
+            <div class="hero-actions">
+              <button class="button button-primary" type="button" data-open-modal>
+                ASK FOR A HELPING HAND
+              </button>
+              <a href="#board" class="button button-secondary">MEET YOUR NEIGHBORS</a>
+            </div>
+            <ul class="hero-meta" aria-label="Neighborly highlights">
+              <li>Friendly, local help</li>
+              <li>Flexible stays</li>
+              <li>Easy check-ins</li>
+            </ul>
+          </div>
+
+          <div class="hero-visual" aria-label="Illustration of cat and plant care">
+            <div class="scene">
+              <div class="card card-small top-left">
+                <span class="card-icon">🐾</span>
+                <div>
+                  <strong>2 sitters nearby</strong>
+                  <small>Ready for a check-in</small>
+                </div>
+              </div>
+
+              <div class="card card-small top-right">
+                <span class="card-icon">💧</span>
+                <div>
+                  <strong>Plant care</strong>
+                  <small>Water on Tuesday</small>
+                </div>
+              </div>
+
+              <div class="cat-scene" aria-hidden="true">
+                <div class="cat-head">
+                  <span class="ear left"></span>
+                  <span class="ear right"></span>
+                  <span class="eye left"></span>
+                  <span class="eye right"></span>
+                  <span class="nose"></span>
+                  <span class="whiskers left"></span>
+                  <span class="whiskers right"></span>
+                </div>
+                <div class="cat-body"></div>
+                <div class="cat-tail"></div>
+              </div>
+
+              <div class="plant-scene" aria-hidden="true">
+                <div class="pot"></div>
+                <div class="stem stem-one"></div>
+                <div class="stem stem-two"></div>
+                <div class="leaf leaf-one"></div>
+                <div class="leaf leaf-two"></div>
+                <div class="leaf leaf-three"></div>
+                <div class="leaf leaf-four"></div>
+              </div>
+
+              <div class="card card-note bottom-center">
+                <span class="card-icon">🏡</span>
+                <div>
+                  <strong>Home check</strong>
+                  <small>Mail, plants, and peace of mind</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="board-section" id="board">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Community board</p>
+              <h2>Good neighbors, right here.</h2>
+            </div>
+            <button class="button button-primary small-button" type="button" data-open-modal>
+              POST A REQUEST
+            </button>
+          </div>
+
+          <div class="filters" aria-label="Request category filters">
+            <button class="filter-button active" type="button" data-filter="ALL REQUESTS" aria-pressed="true">ALL REQUESTS</button>
+            <button class="filter-button" type="button" data-filter="PET CARE" aria-pressed="false">PET CARE</button>
+            <button class="filter-button" type="button" data-filter="PLANT CARE" aria-pressed="false">PLANT CARE</button>
+            <button class="filter-button" type="button" data-filter="HOME CHECK-IN" aria-pressed="false">HOME CHECK-IN</button>
+          </div>
+
+          <div id="request-list" class="request-list" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="how-it-works" id="how-it-works">
+        <div class="container">
+          <div class="section-header center">
+            <p class="eyebrow">How it works</p>
+            <h2>Simple help, shared with ease.</h2>
+          </div>
+
+          <div class="steps-grid">
+            <article class="step-card">
+              <span class="step-number">01</span>
+              <h3>SHARE</h3>
+              <p>Post a quick request for feeding, watering, or a quick home check while you are away.</p>
+            </article>
+
+            <article class="step-card">
+              <span class="step-number">02</span>
+              <h3>CONNECT</h3>
+              <p>Browse nearby needs and say hello to neighbors who are happy to help out.</p>
+            </article>
+
+            <article class="step-card">
+              <span class="step-number">03</span>
+              <h3>RETURN</h3>
+              <p>Keep each other company, trade a helping hand, and make the day-to-day feel lighter.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-section">
+        <div class="container cta-wrap">
+          <div>
+            <p class="eyebrow dark">Ready when you are</p>
+            <h2>Need a hand? Start with a hello.</h2>
+            <p>
+              Share what you need, invite your closest neighbors into the loop, and keep your home feeling cared for while you are away.
+            </p>
+          </div>
+          <button class="button button-primary cta-button" type="button" data-open-modal>
+            CREATE YOUR REQUEST
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <div class="brand footer-brand" aria-label="Neighborly logo and tagline">
+          <span class="brand-mark" aria-hidden="true">N</span>
+          <span class="brand-text">Neighborly</span>
+        </div>
+        <p>Small help. Stronger neighborhoods.</p>
+      </div>
+    </footer>
+
+    <div class="modal hidden" id="request-modal" aria-hidden="true">
+      <div class="modal-backdrop" data-close-modal></div>
+      <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="request-modal-title">
+        <button class="modal-close" type="button" aria-label="Close request form" data-close-modal>
+          ×
+        </button>
+        <h3 id="request-modal-title">Ask for a little help</h3>
+        <p class="modal-intro">
+          This is a frontend demo. Requests are saved only in this browser and not shared with real neighbors.
+        </p>
+
+        <form id="request-form" novalidate>
+          <div class="form-field">
+            <label for="request-title">Request title</label>
+            <input id="request-title" name="requestTitle" type="text" maxlength="80" />
+            <p class="error-message" id="error-title" aria-live="polite"></p>
+          </div>
+
+          <div class="form-field">
+            <label for="request-description">Description</label>
+            <textarea id="request-description" name="description" rows="4" maxlength="220"></textarea>
+            <p class="error-message" id="error-description" aria-live="polite"></p>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="request-category">Category</label>
+              <select id="request-category" name="category">
+                <option value="">Select a category</option>
+                <option value="PET CARE">PET CARE</option>
+                <option value="PLANT CARE">PLANT CARE</option>
+                <option value="HOME CHECK-IN">HOME CHECK-IN</option>
+              </select>
+              <p class="error-message" id="error-category" aria-live="polite"></p>
+            </div>
+
+            <div class="form-field">
+              <label for="request-duration">Duration or dates</label>
+              <input id="request-duration" name="duration" type="text" maxlength="50" placeholder="e.g. 4 days • Jul 10–14" />
+              <p class="error-message" id="error-duration" aria-live="polite"></p>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="request-name">First name</label>
+            <input id="request-name" name="firstName" type="text" maxlength="40" />
+            <p class="error-message" id="error-name" aria-live="polite"></p>
+          </div>
+
+          <button class="button button-primary full-width form-submit" type="submit">POST REQUEST</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="toast" id="success-toast" role="status" aria-live="polite" aria-atomic="true">
+      Request posted. Your new card is now on the board.
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
