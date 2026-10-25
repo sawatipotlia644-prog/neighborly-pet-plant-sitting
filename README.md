@@ -1,75 +1,74 @@
 # Neighborly — Pet & Plant Sitting
 
-Neighborly is a mobile-first single-page web app for finding nearby neighbors who can help with pet care, plant watering, and home check-ins while someone is away.
+Neighborly is a community website for finding nearby help with pet sitting, plant watering, and home check-ins while someone is away. This project is a static front-end demo built with HTML, CSS, and JavaScript.
 
 ## Features
 
-- Friendly community board with category filters for pet care, plant care, and home check-ins
-- Modal request form with validation for required fields and safe browser-only persistence
-- Quick response flow for a request card that pre-fills the form for follow-up
-- LocalStorage-backed state so request cards persist across refreshes in the same browser
-- Mobile-first responsive layout with a warm, welcoming community aesthetic
-- Toast confirmation after posting a request
+- Warm, welcoming landing page inspired by the lo-fi prototype
+- Responsive request board with category filters and live search
+- Request detail modal with a neighbor-friendly summary and confirmation flow
+- Request form with validation for required fields and date ordering
+- Browser-based storage for demo requests
+- Trust and safety guidance to help neighbors coordinate respectfully
+- Responsive layouts for desktop and mobile
 
-## Run it locally
+## Run Locally
 
-1. Open the project folder.
-2. Start a simple local server in the terminal:
+1. Open the project folder in VS Code.
+2. Open a terminal in the project folder.
+3. Start a local server:
 
-```bash
-cd /path/to/project
-python3 -m http.server 8000
-```
+   ```bash
+   python3 -m http.server 8000
+   ```
 
-3. Visit http://localhost:8000 in your browser.
+4. Open http://localhost:8000 in your browser.
 
-## Deploy with Netlify
+## Browser Demo Notes
 
-1. Push the project to GitHub.
-2. Sign in to Netlify.
-3. Choose "Add new project" and connect the repository.
-4. Set the publish directory to the project root.
-5. Leave the build step blank for this plain static site.
-6. Deploy.
+- Where implemented, requests are saved in the current browser's `localStorage`.
+- This is a front-end demo, not a shared online database or real messaging system.
+- Browser-stored requests are not automatically visible to other users.
 
-## Deploy with GitHub Pages
-
-1. Push the project to a GitHub repository.
-2. Open the repository settings.
-3. Select the Pages section.
-4. Choose the main branch and root folder.
-5. Save the settings to publish the page.
-
-## Notes
-
-- This is a front-end demo only and does not connect to a backend or real user accounts.
-- All posted request data stays in the current browser via localStorage for demo purposes.
-
-Live deployed URL: https://your-live-demo-url.example
-GitHub repository URL: https://github.com/your-username/your-repo
-
-
-## Week 3–4 design deliverables
+## Week 3–4 Design Deliverables
 
 - **Lo-fi prototype:** https://sawatipotlia644-prog.github.io/neighborly-pet-plant-sitting/prototype/
 - **Interactive concept build:** https://sawatipotlia644-prog.github.io/neighborly-pet-plant-sitting/build/
 - **Source code repository:** https://github.com/sawatipotlia644-prog/neighborly-pet-plant-sitting
+- **Main website:** https://sawatipotlia644-prog.github.io/neighborly-pet-plant-sitting/
 
-### Design rationale to validate against research
-The Week 3–4 interview notes and context-mapping artifacts were not provided in this conversation, so these are explicitly working hypotheses inferred from the existing Neighborly pet-and-plant-care concept—not direct interview findings:
+## Design Rationale to Validate Against Research
+
+The interview notes and context-mapping artifacts were not included here. The following points are working hypotheses based on the Neighborly concept, not verified interview findings:
 
 1. People should be able to scan care requests by category.
-2. A request should show task, timing, and approximate duration before someone offers help.
+2. A request should show the task, timing, and approximate duration before someone offers help.
 3. Posting a request should be short and guided.
-4. Trust and clear care instructions matter when asking a neighbour to look after a pet, plant, or home.
+4. Trust and clear care instructions matter when asking a neighbor to look after a pet, plant, or home.
 5. The product should support both people requesting help and people offering it.
 
-### How the prototype informs the build
-- Category filters in the wireframe became working filter chips.
-- Request-list cards became responsive cards with a details dialog.
-- The request form became a validated preview flow that adds a request to the current page.
-- The trust/safety notes remain visible before users commit to helping.
-- Both pages adapt to mobile screens.
+Compare these hypotheses with your actual interview and context-mapping findings before submitting.
 
-### Limitations
-This is a front-end concept build only. Sample requests are illustrative. New requests exist only in the current page session; there is no backend, account system, messaging, or server-side storage. The “I'm interested” action demonstrates a future flow and does not contact anyone. Please compare the working hypotheses with your actual interview and context-mapping findings before submitting.
+## How the Prototype Informs the Build
+
+- Category filters in the wireframe inform the request filtering interface.
+- Request-list cards inform the responsive cards and details dialog.
+- The request form informs the validated request-submission flow.
+- Trust and safety notes remain visible to help users coordinate responsibly.
+- The prototype and concept build are designed to adapt to mobile screens.
+
+## Accessibility and Responsive Design
+
+- Navigation supports desktop and mobile layouts.
+- Form fields and buttons are designed for keyboard access.
+- The modal is intended to support clear labels and accessible closing behavior.
+- A soft neutral and green palette supports a welcoming visual style.
+
+## Limitations
+
+- No backend or authentication is implemented.
+- The website does not provide actual identity verification or real-time messaging.
+- Browser storage is limited to the current browser and device.
+- Sample requests are illustrative.
+- The “I'm interested” action demonstrates a possible future flow and does not contact anyone.
+
