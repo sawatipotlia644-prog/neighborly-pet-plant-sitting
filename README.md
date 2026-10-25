@@ -47,3 +47,29 @@ python3 -m http.server 8000
 
 Live deployed URL: https://your-live-demo-url.example
 GitHub repository URL: https://github.com/your-username/your-repo
+
+
+## Week 3–4 design deliverables
+
+- **Lo-fi prototype:** https://sawatipotlia644-prog.github.io/neighborly-pet-plant-sitting/prototype/
+- **Interactive concept build:** https://sawatipotlia644-prog.github.io/neighborly-pet-plant-sitting/build/
+- **Source code repository:** https://github.com/sawatipotlia644-prog/neighborly-pet-plant-sitting
+
+### Design rationale to validate against research
+The Week 3–4 interview notes and context-mapping artifacts were not provided in this conversation, so these are explicitly working hypotheses inferred from the existing Neighborly pet-and-plant-care concept—not direct interview findings:
+
+1. People should be able to scan care requests by category.
+2. A request should show task, timing, and approximate duration before someone offers help.
+3. Posting a request should be short and guided.
+4. Trust and clear care instructions matter when asking a neighbour to look after a pet, plant, or home.
+5. The product should support both people requesting help and people offering it.
+
+### How the prototype informs the build
+- Category filters in the wireframe became working filter chips.
+- Request-list cards became responsive cards with a details dialog.
+- The request form became a validated preview flow that adds a request to the current page.
+- The trust/safety notes remain visible before users commit to helping.
+- Both pages adapt to mobile screens.
+
+### Limitations
+This is a front-end concept build only. Sample requests are illustrative. New requests exist only in the current page session; there is no backend, account system, messaging, or server-side storage. The “I'm interested” action demonstrates a future flow and does not contact anyone. Please compare the working hypotheses with your actual interview and context-mapping findings before submitting.
